@@ -85,7 +85,7 @@ const Gallery = ({ items }: GalleryProps) => {
             alt={`Thumb - ${item.label}`}
             onClick={() => {
               setIsOpen(true)
-              slider.current!.slickGoTo(index, true)
+              slider.current?.slickGoTo(index, true)
             }}
           />
         ))}
